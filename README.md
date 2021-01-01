@@ -1,1 +1,1 @@
-React with Typescript and Webpack v5
+React with Typescript and Webpack v4
