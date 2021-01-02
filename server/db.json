@@ -1,0 +1,40 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "Nguyen Van",
+      "lastName": "A",
+      "email": "customer1@mail.com",
+      "phone": "00000000000",
+      "address": "Customer_1 Address",
+      "description": "Customer_1 description"
+    },
+    {
+      "id": 2,
+      "firstName": "Tran Thi",
+      "lastName": "B",
+      "email": "customer2@mail.com",
+      "phone": "00000000000",
+      "address": "Customer_2 Adress",
+      "description": "Customer_2 Description"
+    },
+    {
+      "firstName": "Ngo Van",
+      "lastName": "C",
+      "email": "fdfdfd",
+      "phone": "fdfds",
+      "address": "fffd",
+      "description": "fdsfsdf",
+      "id": 4
+    },
+    {
+      "firstName": "Duong Van",
+      "lastName": "D",
+      "email": "d.dv@gmail.com",
+      "phone": "841551841",
+      "address": "1111 Go X",
+      "description": "vvvvv",
+      "id": 5
+    }
+  ]
+}
