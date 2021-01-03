@@ -7,4 +7,4 @@ const CustomerEdit = () => {
   );
 }
 
-export default withRouter(CustomerEdit);
+export default CustomerEdit;

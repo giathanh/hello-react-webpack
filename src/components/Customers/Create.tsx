@@ -1,5 +1,4 @@
 import * as React from "react";
-import { withRouter } from "react-router-dom";
 
 const CustomerCreate = () => {
   return (
@@ -7,4 +6,4 @@ const CustomerCreate = () => {
   );
 }
 
-export default withRouter(CustomerCreate);
+export default CustomerCreate;
