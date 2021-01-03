@@ -1,24 +1,37 @@
 import * as React from "react";
-import {Link, Route, BrowserRouter, Switch} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Layout, Breadcrumb } from "antd";
+
+import PageHeader from "./components/Layout/Header";
+import Sidebar from "./components/Layout/Sidebar";
+import PageBreadcums from "./components/Layout/Breadcums";
+
+const { Content } = Layout;
 
 import Router from "./Router";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to={"/"}> Home</Link>
-            </li>
-            <li>
-              <Link to={"/customer"}> Customer</Link>
-            </li>
-          </ul>
-        </nav>
-        <Router />
-      </div>
+      <Layout>
+        <PageHeader />
+        <Layout>
+          <Sidebar />
+          <Layout style={{ padding: '0 24px 24px' }}>
+            <PageBreadcums />
+            <Content
+              className="site-layout-background"
+              style={{
+                padding: 24,
+                margin: 0,
+                minHeight: 280,
+              }}
+            >
+              <Router />
+            </Content>
+          </Layout>
+        </Layout>
+      </Layout>
     </BrowserRouter>
   );
 }
